@@ -25,6 +25,8 @@
 			<string>lRUdxz</string>
 			<key>INIntentInput</key>
 			<string>input_file</string>
+			<key>INIntentKeyParameter</key>
+			<string>input_file</string>
 			<key>INIntentLastParameterTag</key>
 			<integer>2</integer>
 			<key>INIntentManagedParameterCombinations</key>
@@ -34,7 +36,7 @@
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
-					<string>Convert ${input_file} to WAV</string>
+					<string>Convert ${input_file} to base64'd WAV</string>
 					<key>INIntentParameterCombinationTitleID</key>
 					<string>vzZIU5</string>
 					<key>INIntentParameterCombinationUpdatesLinked</key>
@@ -47,12 +49,10 @@
 			<dict>
 				<key>input_file</key>
 				<dict>
-					<key>INIntentParameterCombinationIsLinked</key>
-					<true/>
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
-					<string>Convert ${input_file} to WAV</string>
+					<string>Convert ${input_file} to base64'd WAV</string>
 					<key>INIntentParameterCombinationTitleID</key>
 					<string>6OXORt</string>
 				</dict>
@@ -68,8 +68,15 @@
 					<integer>1</integer>
 					<key>INIntentParameterMetadata</key>
 					<dict>
+						<key>INIntentParameterMetadataCustomUTIs</key>
+						<array>
+							<dict>
+								<key>UTI</key>
+								<string>public.data</string>
+							</dict>
+						</array>
 						<key>INIntentParameterMetadataType</key>
-						<string>PlainText</string>
+						<string>Custom</string>
 					</dict>
 					<key>INIntentParameterName</key>
 					<string>input_file</string>
@@ -126,7 +133,7 @@
 					</dict>
 				</array>
 				<key>INIntentResponseLastParameterTag</key>
-				<integer>6</integer>
+				<integer>12</integer>
 				<key>INIntentResponseOutput</key>
 				<string>output_file</string>
 				<key>INIntentResponseParameters</key>
@@ -140,15 +147,17 @@
 						<integer>1</integer>
 						<key>INIntentResponseParameterName</key>
 						<string>output_file</string>
+						<key>INIntentResponseParameterSupportsMultipleValues</key>
+						<true/>
 						<key>INIntentResponseParameterTag</key>
-						<integer>6</integer>
+						<integer>12</integer>
 						<key>INIntentResponseParameterType</key>
 						<string>String</string>
 					</dict>
 				</array>
 			</dict>
 			<key>INIntentTitle</key>
-			<string>Convert audio to WAV</string>
+			<string>Convert audio to base64'd WAV</string>
 			<key>INIntentTitleID</key>
 			<string>CJJ09E</string>
 			<key>INIntentType</key>

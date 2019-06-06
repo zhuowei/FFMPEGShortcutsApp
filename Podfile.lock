@@ -1,0 +1,16 @@
+PODS:
+  - mobile-ffmpeg-audio (4.2.1)
+
+DEPENDENCIES:
+  - mobile-ffmpeg-audio (= 4.2.1)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - mobile-ffmpeg-audio
+
+SPEC CHECKSUMS:
+  mobile-ffmpeg-audio: 80320cf1ab226b303b5f73d4401ec60f02b71e2c
+
+PODFILE CHECKSUM: 4f1915a8a5121bdfa0a40a8050e5445577afcc1a
+
+COCOAPODS: 1.6.1

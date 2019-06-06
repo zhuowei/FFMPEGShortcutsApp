@@ -7,7 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09DE45A083BBFD85FABF3AA1 /* Pods_FFMPEGShortcutsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 464BB5D80270DE44AC862E79 /* Pods_FFMPEGShortcutsAppTests.framework */; };
+		702A3B3BE8E13F9D3E9911B2 /* Pods_FFMPEGShortcutsAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 328D578365B4ADF77D1083E5 /* Pods_FFMPEGShortcutsAppUITests.framework */; };
+		72A61509B981D0531A115371 /* Pods_FFMPEGShortcutsApp_FFMPEGShortcutsAppIntentsExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE953559396259A20E0E7FB1 /* Pods_FFMPEGShortcutsApp_FFMPEGShortcutsAppIntentsExtension.framework */; };
+		7EBC1C0ABCA6D56BE1FFB8AD /* Pods_FFMPEGShortcutsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B38B8285FFBE2B23A75C44BC /* Pods_FFMPEGShortcutsApp.framework */; };
 		C566448222A89AAC00BD8342 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C566448122A89AAC00BD8342 /* Intents.intentdefinition */; };
+		C56C773F22A8AED400732A95 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56C773E22A8AED400732A95 /* IntentHandler.swift */; };
+		C56C774722A8AED400732A95 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C56C774622A8AED400732A95 /* IntentsUI.framework */; };
+		C56C774A22A8AED400732A95 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56C774922A8AED400732A95 /* IntentViewController.swift */; };
+		C56C774D22A8AED400732A95 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C56C774B22A8AED400732A95 /* MainInterface.storyboard */; };
+		C56C775122A8AED400732A95 /* FFMPEGShortcutsAppIntentsExtensionUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C56C774522A8AED400732A95 /* FFMPEGShortcutsAppIntentsExtensionUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C56C775422A8AED400732A95 /* FFMPEGShortcutsAppIntentsExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C56C773C22A8AED400732A95 /* FFMPEGShortcutsAppIntentsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C56C775D22A8AF5500732A95 /* FFMPEGIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56C775C22A8AF5500732A95 /* FFMPEGIntentHandler.swift */; };
+		C56C775E22A8B00F00732A95 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C566448122A89AAC00BD8342 /* Intents.intentdefinition */; };
 		C5D42DA222A8647100540766 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D42DA122A8647100540766 /* AppDelegate.swift */; };
 		C5D42DA422A8647100540766 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D42DA322A8647100540766 /* SceneDelegate.swift */; };
 		C5D42DA622A8647100540766 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D42DA522A8647100540766 /* ContentView.swift */; };
@@ -19,6 +31,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C56C774F22A8AED400732A95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5D42D9622A8647100540766 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C56C774422A8AED400732A95;
+			remoteInfo = FFMPEGShortcutsAppIntentsExtensionUI;
+		};
+		C56C775222A8AED400732A95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5D42D9622A8647100540766 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C56C773B22A8AED400732A95;
+			remoteInfo = FFMPEGShortcutsAppIntentsExtension;
+		};
 		C5D42DB522A8647300540766 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C5D42D9622A8647100540766 /* Project object */;
@@ -35,8 +61,41 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C56C775B22A8AED400732A95 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C56C775122A8AED400732A95 /* FFMPEGShortcutsAppIntentsExtensionUI.appex in Embed App Extensions */,
+				C56C775422A8AED400732A95 /* FFMPEGShortcutsAppIntentsExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		03538D5F0CC3DA7C39DC2D16 /* Pods-FFMPEGShortcutsAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFMPEGShortcutsAppUITests.release.xcconfig"; path = "Target Support Files/Pods-FFMPEGShortcutsAppUITests/Pods-FFMPEGShortcutsAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		253AE3ACF61B81624CF7BE9B /* Pods-FFMPEGShortcutsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFMPEGShortcutsApp.debug.xcconfig"; path = "Target Support Files/Pods-FFMPEGShortcutsApp/Pods-FFMPEGShortcutsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		328D578365B4ADF77D1083E5 /* Pods_FFMPEGShortcutsAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FFMPEGShortcutsAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		464BB5D80270DE44AC862E79 /* Pods_FFMPEGShortcutsAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FFMPEGShortcutsAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C5DC6D0BB7621839A257785 /* Pods-FFMPEGShortcutsApp-FFMPEGShortcutsAppIntentsExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFMPEGShortcutsApp-FFMPEGShortcutsAppIntentsExtension.debug.xcconfig"; path = "Target Support Files/Pods-FFMPEGShortcutsApp-FFMPEGShortcutsAppIntentsExtension/Pods-FFMPEGShortcutsApp-FFMPEGShortcutsAppIntentsExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		4EC1C5DF0DEAF801366C2A58 /* Pods-FFMPEGShortcutsApp-FFMPEGShortcutsAppIntentsExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFMPEGShortcutsApp-FFMPEGShortcutsAppIntentsExtension.release.xcconfig"; path = "Target Support Files/Pods-FFMPEGShortcutsApp-FFMPEGShortcutsAppIntentsExtension/Pods-FFMPEGShortcutsApp-FFMPEGShortcutsAppIntentsExtension.release.xcconfig"; sourceTree = "<group>"; };
+		5B67629844B007F759AD771A /* Pods-FFMPEGShortcutsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFMPEGShortcutsAppTests.debug.xcconfig"; path = "Target Support Files/Pods-FFMPEGShortcutsAppTests/Pods-FFMPEGShortcutsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B38B8285FFBE2B23A75C44BC /* Pods_FFMPEGShortcutsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FFMPEGShortcutsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C566448122A89AAC00BD8342 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		C56C773C22A8AED400732A95 /* FFMPEGShortcutsAppIntentsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FFMPEGShortcutsAppIntentsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C56C773E22A8AED400732A95 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		C56C774022A8AED400732A95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C56C774522A8AED400732A95 /* FFMPEGShortcutsAppIntentsExtensionUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FFMPEGShortcutsAppIntentsExtensionUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C56C774622A8AED400732A95 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		C56C774922A8AED400732A95 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		C56C774C22A8AED400732A95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		C56C774E22A8AED400732A95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C56C775C22A8AF5500732A95 /* FFMPEGIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFMPEGIntentHandler.swift; sourceTree = "<group>"; };
+		C56C775F22A8B06700732A95 /* FFMPEGShortcutsAppIntentsExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FFMPEGShortcutsAppIntentsExtension-Bridging-Header.h"; sourceTree = "<group>"; };
 		C5D42D9E22A8647100540766 /* FFMPEGShortcutsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFMPEGShortcutsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5D42DA122A8647100540766 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5D42DA322A8647100540766 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,13 +110,34 @@
 		C5D42DBF22A8647300540766 /* FFMPEGShortcutsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFMPEGShortcutsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5D42DC322A8647300540766 /* FFMPEGShortcutsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFMPEGShortcutsAppUITests.swift; sourceTree = "<group>"; };
 		C5D42DC522A8647300540766 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D91131ED13A59D0C3D212CE8 /* Pods-FFMPEGShortcutsAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFMPEGShortcutsAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-FFMPEGShortcutsAppUITests/Pods-FFMPEGShortcutsAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DF3AC763316FCD4E4D14B501 /* Pods-FFMPEGShortcutsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFMPEGShortcutsApp.release.xcconfig"; path = "Target Support Files/Pods-FFMPEGShortcutsApp/Pods-FFMPEGShortcutsApp.release.xcconfig"; sourceTree = "<group>"; };
+		EE953559396259A20E0E7FB1 /* Pods_FFMPEGShortcutsApp_FFMPEGShortcutsAppIntentsExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FFMPEGShortcutsApp_FFMPEGShortcutsAppIntentsExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD91DF26A50C1E54ED58A9BF /* Pods-FFMPEGShortcutsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFMPEGShortcutsAppTests.release.xcconfig"; path = "Target Support Files/Pods-FFMPEGShortcutsAppTests/Pods-FFMPEGShortcutsAppTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C56C773922A8AED400732A95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72A61509B981D0531A115371 /* Pods_FFMPEGShortcutsApp_FFMPEGShortcutsAppIntentsExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C56C774222A8AED400732A95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C56C774722A8AED400732A95 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C5D42D9B22A8647100540766 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EBC1C0ABCA6D56BE1FFB8AD /* Pods_FFMPEGShortcutsApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09DE45A083BBFD85FABF3AA1 /* Pods_FFMPEGShortcutsAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +153,61 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				702A3B3BE8E13F9D3E9911B2 /* Pods_FFMPEGShortcutsAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6091135C1CA59F30FFB98F08 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				253AE3ACF61B81624CF7BE9B /* Pods-FFMPEGShortcutsApp.debug.xcconfig */,
+				DF3AC763316FCD4E4D14B501 /* Pods-FFMPEGShortcutsApp.release.xcconfig */,
+				5B67629844B007F759AD771A /* Pods-FFMPEGShortcutsAppTests.debug.xcconfig */,
+				FD91DF26A50C1E54ED58A9BF /* Pods-FFMPEGShortcutsAppTests.release.xcconfig */,
+				D91131ED13A59D0C3D212CE8 /* Pods-FFMPEGShortcutsAppUITests.debug.xcconfig */,
+				03538D5F0CC3DA7C39DC2D16 /* Pods-FFMPEGShortcutsAppUITests.release.xcconfig */,
+				4C5DC6D0BB7621839A257785 /* Pods-FFMPEGShortcutsApp-FFMPEGShortcutsAppIntentsExtension.debug.xcconfig */,
+				4EC1C5DF0DEAF801366C2A58 /* Pods-FFMPEGShortcutsApp-FFMPEGShortcutsAppIntentsExtension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AD6FB4E9C376AAA11EFD67E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B38B8285FFBE2B23A75C44BC /* Pods_FFMPEGShortcutsApp.framework */,
+				464BB5D80270DE44AC862E79 /* Pods_FFMPEGShortcutsAppTests.framework */,
+				328D578365B4ADF77D1083E5 /* Pods_FFMPEGShortcutsAppUITests.framework */,
+				C56C774622A8AED400732A95 /* IntentsUI.framework */,
+				EE953559396259A20E0E7FB1 /* Pods_FFMPEGShortcutsApp_FFMPEGShortcutsAppIntentsExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C56C773D22A8AED400732A95 /* FFMPEGShortcutsAppIntentsExtension */ = {
+			isa = PBXGroup;
+			children = (
+				C56C773E22A8AED400732A95 /* IntentHandler.swift */,
+				C56C775C22A8AF5500732A95 /* FFMPEGIntentHandler.swift */,
+				C56C774022A8AED400732A95 /* Info.plist */,
+				C56C775F22A8B06700732A95 /* FFMPEGShortcutsAppIntentsExtension-Bridging-Header.h */,
+			);
+			path = FFMPEGShortcutsAppIntentsExtension;
+			sourceTree = "<group>";
+		};
+		C56C774822A8AED400732A95 /* FFMPEGShortcutsAppIntentsExtensionUI */ = {
+			isa = PBXGroup;
+			children = (
+				C56C774922A8AED400732A95 /* IntentViewController.swift */,
+				C56C774B22A8AED400732A95 /* MainInterface.storyboard */,
+				C56C774E22A8AED400732A95 /* Info.plist */,
+			);
+			path = FFMPEGShortcutsAppIntentsExtensionUI;
+			sourceTree = "<group>";
+		};
 		C5D42D9522A8647100540766 = {
 			isa = PBXGroup;
 			children = (
@@ -85,7 +215,11 @@
 				C5D42DA022A8647100540766 /* FFMPEGShortcutsApp */,
 				C5D42DB722A8647300540766 /* FFMPEGShortcutsAppTests */,
 				C5D42DC222A8647300540766 /* FFMPEGShortcutsAppUITests */,
+				C56C773D22A8AED400732A95 /* FFMPEGShortcutsAppIntentsExtension */,
+				C56C774822A8AED400732A95 /* FFMPEGShortcutsAppIntentsExtensionUI */,
 				C5D42D9F22A8647100540766 /* Products */,
+				6091135C1CA59F30FFB98F08 /* Pods */,
+				AD6FB4E9C376AAA11EFD67E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +229,8 @@
 				C5D42D9E22A8647100540766 /* FFMPEGShortcutsApp.app */,
 				C5D42DB422A8647300540766 /* FFMPEGShortcutsAppTests.xctest */,
 				C5D42DBF22A8647300540766 /* FFMPEGShortcutsAppUITests.xctest */,
+				C56C773C22A8AED400732A95 /* FFMPEGShortcutsAppIntentsExtension.appex */,
+				C56C774522A8AED400732A95 /* FFMPEGShortcutsAppIntentsExtensionUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,17 +278,56 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C5D42D9D22A8647100540766 /* FFMPEGShortcutsApp */ = {
+		C56C773B22A8AED400732A95 /* FFMPEGShortcutsAppIntentsExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C5D42DC822A8647300540766 /* Build configuration list for PBXNativeTarget "FFMPEGShortcutsApp" */;
+			buildConfigurationList = C56C775822A8AED400732A95 /* Build configuration list for PBXNativeTarget "FFMPEGShortcutsAppIntentsExtension" */;
 			buildPhases = (
-				C5D42D9A22A8647100540766 /* Sources */,
-				C5D42D9B22A8647100540766 /* Frameworks */,
-				C5D42D9C22A8647100540766 /* Resources */,
+				84AFCA3CA366D4DF76C3D65E /* [CP] Check Pods Manifest.lock */,
+				C56C773822A8AED400732A95 /* Sources */,
+				C56C773922A8AED400732A95 /* Frameworks */,
+				C56C773A22A8AED400732A95 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = FFMPEGShortcutsAppIntentsExtension;
+			productName = FFMPEGShortcutsAppIntentsExtension;
+			productReference = C56C773C22A8AED400732A95 /* FFMPEGShortcutsAppIntentsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C56C774422A8AED400732A95 /* FFMPEGShortcutsAppIntentsExtensionUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C56C775522A8AED400732A95 /* Build configuration list for PBXNativeTarget "FFMPEGShortcutsAppIntentsExtensionUI" */;
+			buildPhases = (
+				C56C774122A8AED400732A95 /* Sources */,
+				C56C774222A8AED400732A95 /* Frameworks */,
+				C56C774322A8AED400732A95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FFMPEGShortcutsAppIntentsExtensionUI;
+			productName = FFMPEGShortcutsAppIntentsExtensionUI;
+			productReference = C56C774522A8AED400732A95 /* FFMPEGShortcutsAppIntentsExtensionUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C5D42D9D22A8647100540766 /* FFMPEGShortcutsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5D42DC822A8647300540766 /* Build configuration list for PBXNativeTarget "FFMPEGShortcutsApp" */;
+			buildPhases = (
+				B58F20B8811D4CAF0B2F4878 /* [CP] Check Pods Manifest.lock */,
+				C5D42D9A22A8647100540766 /* Sources */,
+				C5D42D9B22A8647100540766 /* Frameworks */,
+				C5D42D9C22A8647100540766 /* Resources */,
+				C56C775B22A8AED400732A95 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C56C775022A8AED400732A95 /* PBXTargetDependency */,
+				C56C775322A8AED400732A95 /* PBXTargetDependency */,
 			);
 			name = FFMPEGShortcutsApp;
 			productName = FFMPEGShortcutsApp;
@@ -163,6 +338,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5D42DCB22A8647300540766 /* Build configuration list for PBXNativeTarget "FFMPEGShortcutsAppTests" */;
 			buildPhases = (
+				71799C748F742FC115EA7A0F /* [CP] Check Pods Manifest.lock */,
 				C5D42DB022A8647300540766 /* Sources */,
 				C5D42DB122A8647300540766 /* Frameworks */,
 				C5D42DB222A8647300540766 /* Resources */,
@@ -181,6 +357,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5D42DCE22A8647300540766 /* Build configuration list for PBXNativeTarget "FFMPEGShortcutsAppUITests" */;
 			buildPhases = (
+				AF1FD08E817F2E9DFC37930A /* [CP] Check Pods Manifest.lock */,
 				C5D42DBB22A8647300540766 /* Sources */,
 				C5D42DBC22A8647300540766 /* Frameworks */,
 				C5D42DBD22A8647300540766 /* Resources */,
@@ -205,8 +382,16 @@
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Zhuowei Zhang";
 				TargetAttributes = {
+					C56C773B22A8AED400732A95 = {
+						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
+					};
+					C56C774422A8AED400732A95 = {
+						CreatedOnToolsVersion = 11.0;
+					};
 					C5D42D9D22A8647100540766 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					C5D42DB322A8647300540766 = {
 						CreatedOnToolsVersion = 11.0;
@@ -234,11 +419,28 @@
 				C5D42D9D22A8647100540766 /* FFMPEGShortcutsApp */,
 				C5D42DB322A8647300540766 /* FFMPEGShortcutsAppTests */,
 				C5D42DBE22A8647300540766 /* FFMPEGShortcutsAppUITests */,
+				C56C773B22A8AED400732A95 /* FFMPEGShortcutsAppIntentsExtension */,
+				C56C774422A8AED400732A95 /* FFMPEGShortcutsAppIntentsExtensionUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C56C773A22A8AED400732A95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C56C774322A8AED400732A95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C56C774D22A8AED400732A95 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C5D42D9C22A8647100540766 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -265,7 +467,116 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		71799C748F742FC115EA7A0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FFMPEGShortcutsAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84AFCA3CA366D4DF76C3D65E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FFMPEGShortcutsApp-FFMPEGShortcutsAppIntentsExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF1FD08E817F2E9DFC37930A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FFMPEGShortcutsAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B58F20B8811D4CAF0B2F4878 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FFMPEGShortcutsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		C56C773822A8AED400732A95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C56C775E22A8B00F00732A95 /* Intents.intentdefinition in Sources */,
+				C56C773F22A8AED400732A95 /* IntentHandler.swift in Sources */,
+				C56C775D22A8AF5500732A95 /* FFMPEGIntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C56C774122A8AED400732A95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C56C774A22A8AED400732A95 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C5D42D9A22A8647100540766 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -296,6 +607,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		C56C775022A8AED400732A95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C56C774422A8AED400732A95 /* FFMPEGShortcutsAppIntentsExtensionUI */;
+			targetProxy = C56C774F22A8AED400732A95 /* PBXContainerItemProxy */;
+		};
+		C56C775322A8AED400732A95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C56C773B22A8AED400732A95 /* FFMPEGShortcutsAppIntentsExtension */;
+			targetProxy = C56C775222A8AED400732A95 /* PBXContainerItemProxy */;
+		};
 		C5D42DB622A8647300540766 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C5D42D9D22A8647100540766 /* FFMPEGShortcutsApp */;
@@ -309,6 +630,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		C56C774B22A8AED400732A95 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C56C774C22A8AED400732A95 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		C5D42DAC22A8647300540766 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -320,6 +649,89 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C56C775622A8AED400732A95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3D7RY4393N;
+				INFOPLIST_FILE = FFMPEGShortcutsAppIntentsExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.worthdoingbadly.FFMPEGShortcutsApp.FFMPEGShortcutsAppIntentsExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C56C775722A8AED400732A95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3D7RY4393N;
+				INFOPLIST_FILE = FFMPEGShortcutsAppIntentsExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.worthdoingbadly.FFMPEGShortcutsApp.FFMPEGShortcutsAppIntentsExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C56C775922A8AED400732A95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C5DC6D0BB7621839A257785 /* Pods-FFMPEGShortcutsApp-FFMPEGShortcutsAppIntentsExtension.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3D7RY4393N;
+				INFOPLIST_FILE = FFMPEGShortcutsAppIntentsExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.worthdoingbadly.FFMPEGShortcutsApp.FFMPEGShortcutsAppIntentsExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FFMPEGShortcutsAppIntentsExtension/FFMPEGShortcutsAppIntentsExtension-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C56C775A22A8AED400732A95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EC1C5DF0DEAF801366C2A58 /* Pods-FFMPEGShortcutsApp-FFMPEGShortcutsAppIntentsExtension.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3D7RY4393N;
+				INFOPLIST_FILE = FFMPEGShortcutsAppIntentsExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.worthdoingbadly.FFMPEGShortcutsApp.FFMPEGShortcutsAppIntentsExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FFMPEGShortcutsAppIntentsExtension/FFMPEGShortcutsAppIntentsExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		C5D42DC622A8647300540766 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -436,8 +848,11 @@
 		};
 		C5D42DC922A8647300540766 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 253AE3ACF61B81624CF7BE9B /* Pods-FFMPEGShortcutsApp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "FFMPEGShortcutsApp/Preview\\ Content";
 				DEVELOPMENT_TEAM = 3D7RY4393N;
@@ -449,6 +864,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.worthdoingbadly.FFMPEGShortcutsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -456,8 +872,11 @@
 		};
 		C5D42DCA22A8647300540766 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF3AC763316FCD4E4D14B501 /* Pods-FFMPEGShortcutsApp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "FFMPEGShortcutsApp/Preview\\ Content";
 				DEVELOPMENT_TEAM = 3D7RY4393N;
@@ -476,6 +895,7 @@
 		};
 		C5D42DCC22A8647300540766 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B67629844B007F759AD771A /* Pods-FFMPEGShortcutsAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -497,6 +917,7 @@
 		};
 		C5D42DCD22A8647300540766 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD91DF26A50C1E54ED58A9BF /* Pods-FFMPEGShortcutsAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -518,6 +939,7 @@
 		};
 		C5D42DCF22A8647300540766 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D91131ED13A59D0C3D212CE8 /* Pods-FFMPEGShortcutsAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -538,6 +960,7 @@
 		};
 		C5D42DD022A8647300540766 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03538D5F0CC3DA7C39DC2D16 /* Pods-FFMPEGShortcutsAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -559,6 +982,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C56C775522A8AED400732A95 /* Build configuration list for PBXNativeTarget "FFMPEGShortcutsAppIntentsExtensionUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C56C775622A8AED400732A95 /* Debug */,
+				C56C775722A8AED400732A95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C56C775822A8AED400732A95 /* Build configuration list for PBXNativeTarget "FFMPEGShortcutsAppIntentsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C56C775922A8AED400732A95 /* Debug */,
+				C56C775A22A8AED400732A95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C5D42D9922A8647100540766 /* Build configuration list for PBXProject "FFMPEGShortcutsApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
