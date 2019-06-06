@@ -34,7 +34,7 @@
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
-					<string>Converts file</string>
+					<string>Convert ${input_file} to WAV</string>
 					<key>INIntentParameterCombinationTitleID</key>
 					<string>vzZIU5</string>
 					<key>INIntentParameterCombinationUpdatesLinked</key>
@@ -52,7 +52,7 @@
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
-					<string>Converts file</string>
+					<string>Convert ${input_file} to WAV</string>
 					<key>INIntentParameterCombinationTitleID</key>
 					<string>6OXORt</string>
 				</dict>
@@ -133,7 +133,7 @@
 				<array>
 					<dict>
 						<key>INIntentResponseParameterDisplayName</key>
-						<string>OutputFile</string>
+						<string>Output file</string>
 						<key>INIntentResponseParameterDisplayNameID</key>
 						<string>4vgkSP</string>
 						<key>INIntentResponseParameterDisplayPriority</key>
@@ -148,7 +148,7 @@
 				</array>
 			</dict>
 			<key>INIntentTitle</key>
-			<string>Run FFMPEG on files! v3</string>
+			<string>Convert audio to WAV</string>
 			<key>INIntentTitleID</key>
 			<string>CJJ09E</string>
 			<key>INIntentType</key>
