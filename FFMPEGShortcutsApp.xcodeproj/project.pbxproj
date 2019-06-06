@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C566448222A89AAC00BD8342 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C566448122A89AAC00BD8342 /* Intents.intentdefinition */; };
 		C5D42DA222A8647100540766 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D42DA122A8647100540766 /* AppDelegate.swift */; };
 		C5D42DA422A8647100540766 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D42DA322A8647100540766 /* SceneDelegate.swift */; };
 		C5D42DA622A8647100540766 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D42DA522A8647100540766 /* ContentView.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C566448122A89AAC00BD8342 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
 		C5D42D9E22A8647100540766 /* FFMPEGShortcutsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFMPEGShortcutsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5D42DA122A8647100540766 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5D42DA322A8647100540766 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 		C5D42D9522A8647100540766 = {
 			isa = PBXGroup;
 			children = (
+				C566448122A89AAC00BD8342 /* Intents.intentdefinition */,
 				C5D42DA022A8647100540766 /* FFMPEGShortcutsApp */,
 				C5D42DB722A8647300540766 /* FFMPEGShortcutsAppTests */,
 				C5D42DC222A8647300540766 /* FFMPEGShortcutsAppUITests */,
@@ -269,6 +272,7 @@
 			files = (
 				C5D42DA222A8647100540766 /* AppDelegate.swift in Sources */,
 				C5D42DA422A8647100540766 /* SceneDelegate.swift in Sources */,
+				C566448222A89AAC00BD8342 /* Intents.intentdefinition in Sources */,
 				C5D42DA622A8647100540766 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
